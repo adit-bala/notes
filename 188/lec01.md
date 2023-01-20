@@ -112,6 +112,7 @@ Can rarely build this full graph in memory
 
 ###### BFS
     - Strategy: expand a shallowest nodes first
+    - Fringe: FIFO
     - Properties:
         - Time: O(b^s)
         - Space: Has roughly the last tier, `O(b^s)`
@@ -125,3 +126,13 @@ Can rarely build this full graph in memory
         - when solutions are shallow
     - DFS < BFS
         - when solutions are all deep
+
+### Iterative Deepening
+    - Run `DFS` with depth `1`. If no solution...
+    - Run `DFS` with depth `2`. If no solution...
+    - Run `DFS` with depth limit `3`
+    - work happens in the lowest level searched, so not so bad
+
+### Cost Sensitive Search -> Uniform Cost Search
+    - Strategy: expand a cheapest node first
+    - Fringe: priority queue (priority: cumulative cost)
