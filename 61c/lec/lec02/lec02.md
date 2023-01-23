@@ -146,5 +146,3 @@ In general, using `n` bits, we can represent up to `2^n` different bitstrings
 
 
 
-
-
