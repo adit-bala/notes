@@ -21,7 +21,6 @@
     - referred to by number: `x0` - `x31`
 - register `x0` is special and always stores `0`. only have 31 registers
     - registers are identical in behavior, only diff is conventions used when using them
-
 ### Instructions
 
 - Each line of RISC-V code is a single instruction, which executes a simple operation on registers.
